@@ -706,6 +706,11 @@ function dateAddDays(dateStr, n) {
   /* 햄버거 버튼 - PC에서는 숨김 */
   .hamburger { display: none; }
 
+  @media (max-width: 768px) {
+    .hamburger { display: flex; }
+  }
+
+  /* ── 로그인 화면 ── */
   #login-screen {
     position:fixed; inset:0; background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);
     display:flex; align-items:center; justify-content:center; z-index:9999;
